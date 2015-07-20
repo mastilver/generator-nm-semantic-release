@@ -1,10 +1,8 @@
-# generator-nm [![Build Status](https://travis-ci.org/sindresorhus/generator-nm.svg?branch=master)](https://travis-ci.org/sindresorhus/generator-nm)
+# generator-nm [![Build Status](https://travis-ci.org/mastilver/generator-nm-semantic-release.svg?branch=master)](https://travis-ci.org/mastilver/generator-nm-semantic-release)
 
-> Scaffold out a [node module](https://github.com/sindresorhus/node-module-boilerplate)
+Fork of Sindre Sorhus's [ generator](https://github.com/sindresorhus/generator-nm) using Stephan Bönnemann's [semantic-release](https://github.com/semantic-release/semantic-release).
 
 Optionally with a [CLI](http://en.wikipedia.org/wiki/Command-line_interface).
-
-This is what I use for [my own modules](https://www.npmjs.com/~sindresorhus).
 
 ![](screenshot.png)
 
@@ -12,7 +10,7 @@ This is what I use for [my own modules](https://www.npmjs.com/~sindresorhus).
 ## Install
 
 ```
-$ npm install --global generator-nm
+$ npm install --global generator-nm-semantic-release
 ```
 
 
@@ -21,7 +19,7 @@ $ npm install --global generator-nm
 With [yo](https://github.com/yeoman/yo):
 
 ```
-$ yo nm
+$ yo nm-semantic-release
 ```
 
 
@@ -32,4 +30,4 @@ Use [chalk](https://github.com/sindresorhus/chalk) if you want colors in your CL
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Thomas Sileghem](http://github.com/mastilver)

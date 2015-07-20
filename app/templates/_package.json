@@ -1,6 +1,6 @@
 {
   "name": "<%= moduleName %>",
-  "version": "0.0.0",
+  "version": "0.0.0-semantically-released",
   "description": "My <%= superb %> module",
   "license": "MIT",
   "repository": "<%= githubUsername %>/<%= moduleName %>",
@@ -14,7 +14,9 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "prepublish": "semantic-release pre",
+    "postpublish": "semantic-release post"
   },
   "files": [
     "index.js"<% if (cli) { %>,
@@ -26,8 +28,9 @@
     ""
   ],
   "dependencies": {<% if (cli) { %>
-    "meow": "^3.3.0"
-  <% } %>},
+    "meow": "^3.3.0",<% } %>
+    "semantic-release": "^3.3.2"
+  },
   "devDependencies": {
     "mocha": "*"
   }

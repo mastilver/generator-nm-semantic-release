@@ -1,13 +1,12 @@
 {
-  "name": "generator-nm",
-  "version": "1.4.1",
-  "description": "Scaffold out a node module",
+  "name": "generator-nm-semantic-release",
+  "version": "1.0.0",
+  "description": "Scaffold out a node module using semantic-release",
   "license": "MIT",
-  "repository": "sindresorhus/generator-nm",
+  "repository": "mastilver/generator-nm-semantic-release",
   "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
+    "name": "Thomas",
+    "email": "th.sileghem@gmail.com"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -27,7 +26,8 @@
     "node",
     "module",
     "node_module",
-    "node-module"
+    "node-module",
+    "semantic-release"
   ],
   "dependencies": {
     "humanize-url": "^1.0.1",

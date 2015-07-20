@@ -38,6 +38,14 @@ module.exports = yeoman.generators.Base.extend({
 			message: 'Do you need a CLI?',
 			type: 'confirm',
 			default: false
+		}, {
+			name: 'githubToken',
+			message: 'What is your github token? (travis encrypt GH_TOKEN=<token> --add)',
+			store: true,
+		}, {
+			name: 'npmKey',
+			message: 'What is your npm key? (travis encrypt $(echo -n "<username>:<password>" | base64) --add deploy.api_key)',
+			store: true,
 		}], function (props) {
 			var tpl = {
 				moduleName: props.moduleName,
@@ -48,7 +56,9 @@ module.exports = yeoman.generators.Base.extend({
 				website: props.website,
 				humanizedWebsite: humanizeUrl(props.website),
 				superb: superb(),
-				cli: props.cli
+				cli: props.cli,
+				githubToken: props.githubToken,
+				npmKey: props.npmKey,
 			};
 
 			var mv = function (from, to) {
